@@ -83,7 +83,7 @@
               class="room__author"
             >
               <div class="avatar avatar--small">
-                <img src="https://randomuser.me/api/portraits/men/37.jpg" />
+                <img src="{{room.host.avatar.url}}" />
               </div>
               <span>@{{room.host.username}}</span>
             </a>
@@ -103,7 +103,7 @@
                   >
                     <div class="avatar avatar--small">
                       <img
-                        src="https://randomuser.me/api/portraits/men/37.jpg"
+                        src="{{message.user.avatar.url}}"
                       />
                     </div>
                     <span>@{{message.user.username}}</span>
@@ -137,12 +137,14 @@
           </div>
         </div>
       </div>
+      {% if request.user.is_authenticated %}
       <div class="room__message">
         <form action="" method="POST">
           {% csrf_token %}
           <input name="body" placeholder="Write your message here..." />
         </form>
       </div>
+      {% endif %}
     </div>
     <!-- Room End -->
 
