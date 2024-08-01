@@ -1,15 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap");
 
 :root {
-  --color-main: #71c6dd;
+  --color-main: #299bb2;
   --color-main-light: #e1f6fb;
   --color-dark: #3f4156;
   --color-dark-medium: #51546e;
-  --color-dark-light: #696d97;
+  --color-dark-light: #585b80;
   --color-light: #e5e5e5;
   --color-gray: #8b8b8b;
   --color-light-gray: #b2bdbd;
-  --color-bg: #2d2d39;
+  --color-bg: #22222b;
   --color-success: #5dd693;
   --color-error: #fc4b0b;
 }
@@ -96,7 +96,7 @@ a {
 
 .btn--main {
   background-color: var(--color-main);
-  color: var(--color-dark);
+  color: rgb(12, 12, 12);
 }
 
 .btn:hover {
@@ -342,6 +342,7 @@ a {
 .header__menu {
   margin-left: auto;
   position: relative;
+  display: flex;
 }
 
 .header__menu a {
@@ -355,6 +356,7 @@ a {
 
 .header__menu img {
   height: 3.6rem;
+  align-self: center;
 }
 
 .header__menu p {
@@ -749,8 +751,9 @@ a {
 .activities__box {
   margin: 1.5rem;
   padding: 1.5rem;
-  border: 2px solid var(--color-dark-medium);
+  border: 2px solid rgb(45, 49, 64);
   border-radius: 5px;
+  background: rgb(45, 49, 64);
 }
 
 .activities__boxHeader p {
@@ -777,7 +780,7 @@ a {
 }
 
 .activities__boxRoomContent {
-  background: var(--color-bg);
+  background: var(--color-dark-medium);
   padding: 1rem;
   border-radius: 5px;
   margin-top: 1rem;
