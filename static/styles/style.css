@@ -283,8 +283,9 @@ a {
 }
 
 .header__logo > img {
-  height: 3.2rem;
-  width: 3.2rem;
+  height: 5rem;
+  width: 5rem;
+
 }
 
 .header__logo > h1 {
@@ -881,11 +882,14 @@ a {
 
 .profile__about {
   margin-top: 2rem;
+  padding: 2rem;
+  background-color: var(--color-dark);
+  border-radius: 10px;
 }
 
 .profile__about h3 {
   text-transform: uppercase;
-  color: var(--color-dark-light);
+  color: var(--color-main);
   margin-bottom: 0.5rem;
 }
 
@@ -904,9 +908,8 @@ a {
 .room,
 .participants {
   background: var(--color-dark);
-  max-height: 87.5vh;
+  max-height: auto;
   border-radius: 0.7rem;
-  overflow: hidden;
   position: relative;
 }
 
@@ -967,13 +970,9 @@ a {
 }
 
 .room__header {
-  max-height: 30vh;
-  overflow-y: auto;
-  position: absolute;
+  height: 100%;
   width: 95%;
   background: var(--color-dark);
-  z-index: 999;
-  top: 4.4rem;
   padding-top: 2rem;
   padding-bottom: 1rem;
 }
@@ -988,7 +987,8 @@ a {
 .room__box {
   padding-left: 2rem;
   padding-right: 2rem;
-  height: 80.5vh;
+  height: auto;
+  width: auto;
   /* overflow-y: auto; */
   padding-bottom: 0;
 }
@@ -997,7 +997,7 @@ a {
   .room__box {
     padding-left: 2.5rem;
     padding-right: 2rem;
-    height: 80.5vh;
+    
     overflow-y: auto;
     padding-bottom: 0;
   }
@@ -1047,7 +1047,7 @@ a {
 .room__conversation {
   margin-top: 1rem;
   margin-bottom: 4rem;
-  height: 64%;
+  height: 100%;
 }
 
 .threads h3 {
@@ -1061,7 +1061,7 @@ a {
   border-radius: 0.7rem;
   overflow-y: auto;
   height: 100%;
-  margin-top: 28vh;
+  
   padding: 0 2rem 4rem 2rem;
 }
 

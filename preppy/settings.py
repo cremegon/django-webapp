@@ -41,6 +41,8 @@ INSTALLED_APPS = [
     'base.apps.BaseConfig',
 
     'rest_framework',
+
+    
 ]
 
 AUTH_USER_MODEL = "base.User"
@@ -128,7 +130,7 @@ MEDIA_URL = "/images/"
 
 
 STATICFILES_DIRS = [
-    BASE_DIR / "static"
+    BASE_DIR / "static",
 
 ]
 
